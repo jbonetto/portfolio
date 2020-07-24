@@ -1,0 +1,61 @@
+// Mixins acá
+.nav-home {
+    
+    padding: 15px;
+    background-color: @nav-bg;
+    text-align: center;
+
+    h2 {
+        padding: 15px 0;
+    }
+
+    ul {
+        
+        font-family: @nav-font;
+        
+        li {
+            font-size: 17px;
+            padding: 0 10px;
+            display: inline-block;
+            
+            a {
+                text-decoration: none;
+                color: #354159;
+                
+            }
+        }
+    }
+
+   
+}
+
+.img-header {
+    
+    margin: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.btn-mixing(@btn-bg, @txt-color) {
+    
+    background-color: @btn-bg;
+    color: @txt-color;
+    border-radius: 10px;
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: purple;
+        color: @btn-bg;
+        border-radius: 50px;
+    }
+
+    @media @phone {
+        width: 100%;
+    }
+    
+}
+
